@@ -239,6 +239,38 @@ header .header-3 .more p {
   padding-top: 0;
 }
 
+#doctors {
+  background: #fff;
+  padding: 4rem 7%;
+}
+
+#doctors .content {
+  flex-basis: 43%;
+}
+
+#doctors img {
+  flex-basis: 43%;
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  border-radius: 5px;
+}
+
+#doctors .content h3 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+#doctors .content p {
+  font-size: 1.3rem;
+  margin-bottom: 1.8rem;
+  line-height: 1.5;
+}
+
+#doctors .content .btn {
+  display: inline-block;
+  margin-top: 2rem;
+}
 
 
 
@@ -282,6 +314,10 @@ header .header-3 .more p {
     color: #fff;
     border-bottom: none;
     padding-bottom: 0;
+  }
+  
+  header .header-2 img {
+    width: 4rem;
   }
   
   header .navbar .btn {
@@ -335,13 +371,23 @@ header .header-3 .more p {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   header .header-3 .box, header .header-3 .more {
     flex-basis: 47%;
   }
   
   header .header-3 .box p, header .header-3 i{
     font-size: 1.8rem;
+  }
+  
+  #doctors img {
+    flex-basis: 60%;
+    margin: 0 auto;
+    margin-top: 3rem;
+  }
+  
+  #doctors .content {
+    flex-basis: 100%;
   }
 }
 
@@ -355,6 +401,14 @@ header .header-3 .more p {
   }
   
   header .header-2 .content p {
+    font-size: 2rem;
+  }
+  
+  #doctors .content h3 {
+    font-size: 4rem;
+  }
+  
+  #doctors .content p, #doctors .content a {
     font-size: 2rem;
   }
 }
