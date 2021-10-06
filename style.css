@@ -413,6 +413,46 @@ header .header-3 .more p {
   margin-top: 2rem;
 }
 
+#talk {
+  background: #fff;
+  padding: 4rem 7%;
+}
+
+#talk span {
+  font-size: 12rem;
+  color: var(--blue);
+  transform: translateY(-30px);
+}
+
+#talk p {
+  font-size: 1.3rem;
+  flex-basis: 30%;
+}
+
+#talk h3 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+#talk > .row {
+  align-items: center;
+}
+
+#talk .user {
+  transform: translateY(-60px);
+}
+
+#talk .user img {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+}
+
+#talk .user .name h4 {
+  font-size: 1.6rem;
+}
+
 
 
 /* media screen */
@@ -543,6 +583,14 @@ header .header-3 .more p {
   #stats .box {
     flex-basis: 47%;
   }
+  
+  #talk .user {
+    transform: translateY(-50px);
+  }
+  
+  #talk .content p {
+    flex-basis: 70%;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -564,5 +612,50 @@ header .header-3 .more p {
   
   #doctors .content p, #doctors .content a {
     font-size: 2rem;
+  }
+  
+  #stats .box span {
+    font-size: 2rem;
+  }
+  
+  #services .card h4, #services .card p {
+    font-size: 2rem;
+  }
+  
+  #contact .content p, #contact .content a {
+    font-size: 2rem;
+  }
+  
+  #contact h3 {
+    font-size: 4rem;
+  }
+  
+  #services h3 {
+    font-size: 4rem;
+  }
+  
+  #talk h3 {
+    font-size: 4rem;
+  }
+  
+  #talk .content p {
+    font-size: 2rem;
+  }
+  
+  #talk .user {
+    transform: translateY(0);
+  }
+  
+  #talk .user .name h4 {
+    font-size: 2rem;
+  }
+  
+  #talk .user .name p {
+    font-size: 1.7rem;
+  }
+  
+  #talk img {
+    width: 12rem;
+    height: 12rem;
   }
 }
