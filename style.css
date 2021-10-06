@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200;300;400;700&display=swap');
+
+:root {
+  --bg: #f5f8fb;
+  --blue: #3293f0;
+  --black: #393e5a;
+  --gray: #525668;
+  --dark-blue: #256EB3;
+  --shadow: 0 7px 15px rgba(57,147,240,0.3);
+}
+
+* {
+  font-family: 'Noto Sans Display', Sans-Serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+  border: none; outline: none;
+  transition: 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+  transition: width none;
+  color: var(--black);
+}
+
+html::-webkit-scrollbar-track {
+  width: 4rem;
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--black);
+}
+
+header {
+  background: var(--bg);
+  padding: 2rem 7%;
+}
+
+header .header-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg);
+  transition: none;
+}
+
+.logo {
+  font-size: 2.5rem;
+}
+
+.logo i {
+  color: var(--blue);
+  display: inline-block;
+  margin-right: 4px;
+}
+
+header a {
+  color: var(--black);
+  display: inline-block;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+
+#nav-btn {
+  font-size: 1.8rem;
+  margin-left: 1rem;
+  display: none;
+}
+
+#nav-btn:hover {
+  color: var(--blue);
+}
+
+.header-1.active {
+  position: fixed;
+  z-index: 200;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 3rem;
+  transition: none;
+}
+
+header .navbar a:hover {
+  border-bottom: 1px solid var(--black);
+}
+
+.btn {
+  background: var(--blue);
+  padding: 0.8rem 1.6rem;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.btn:hover {
+  background: var(--dark-blue);
+}
+
+header .header-2 {
+  margin: 4rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header .header-2 .content {
+  flex-basis: 50%;
+}
+
+header .header-2 .content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.7rem;
+}
+
+header .header-2 img {
+  width: 30rem;
+  flex-basis: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+header .header-2 .content .btn {
+  display: inline-block;
+  margin: 3rem 0;
+  box-shadow: var(--shadow);
+}
+
+header .header-2 .content p {
+  font-size: 1.3rem;
+}
+
+.call {
+  color: var(--blue);
+}
+
+.call i {
+  display: inline-block;
+  margin-right: 4px;
+}
+
+header .navbar .btn {
+  display: none;
+}
+
+header .header-3 .box {
+  background: #fff;
+  padding: 1.3rem;
+  border-radius: 4px;
+  box-shadow: 0 0 20px rgba(50, 147, 240, 0.1);
+  flex-basis: 15%;
+  text-align: center;
+  position: relative;
+  overflow-y: hidden;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+header .header-3 .more {
+  flex-basis: 13%;
+}
+
+header .header-3 .box:hover {
+  background: var(--blue);
+  color: #fff;
+}
+
+header .header-3 .box .icon {
+  position: absolute;
+}
+
+header .header-3 .box:hover .icon {
+  bottom: 50px;
+}
+
+header .header-3 .box .icon img {
+  width: 8rem;
+  margin: 0 auto;
+  display: block;
+}
+
+header .header-3 .box i {
+  position: absolute;
+  font-size: 1.5rem;
+  bottom: -20px;
+}
+
+header .header-3 .box:hover i {
+  bottom: 20px;
+}
+
+header .header-3 .box:hover img {
+  filter: invert(100%);
+}
+
+header .header-3 .box p {
+  font-size: 1.8rem;
+}
+
+.row {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+header .header-3 h3 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+header .header-3 .more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+header .header-3 .more h3 {
+  color: var(--blue);
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+header .header-3 .more p {
+  font-size: 1.3rem;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+
+
+
+/* media screen */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+  
+  #nav-btn {
+    display: block;
+    font-size: 3rem;
+  }
+  
+  header .header-1 .navbar {
+    position: fixed;
+    left: -600px;
+    top: 0;
+    z-index: 100;
+    width: 30rem;
+    height: 100%;
+    background: #fff;
+  }
+  
+  header .header-1 .navbar.active {
+    left: 0;
+  }
+  
+  header .header-1 .navbar a {
+    display: block;
+    margin: 1.7rem;
+    padding: 0.7rem;
+  }
+  
+  header .header-1 .navbar a:hover {
+    padding-bottom: 0;
+  }
+  
+  header .header-1 .navbar a:hover {
+    background: var(--blue);
+    color: #fff;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  
+  header .navbar .btn {
+    display: inline-block;
+    text-align: center;
+  }
+  
+  header .login .btn {
+    display: none;
+  }
+  
+  header .header-2 .content {
+    flex-basis: 100%;
+  }
+  
+  header .header-2 img {
+    flex-basis: 100%;
+  }
+  
+  header .header-2 .content h1 {
+    font-size: 5.2rem;
+  }
+  
+  header .header-2 .content p {
+    font-size: 2rem;
+  }
+  
+  header .header-3 .box, header .header-3 .more {
+    flex-basis: 48%;
+  }
+  
+  header .header-3 h3 {
+    font-size: 3.5rem;
+    margin: 3rem 0;
+  }
+  
+  header .header-3 .more p{
+    font-size: 2.8rem;
+  }
+  
+  header .header-3 .more h3 {
+    font-size: 6rem;
+  }
+  
+  header .header-3 .box p, header .header-3 .box i {
+    font-size: 3rem;
+  }
+  
+  header .header-3 .icon img {
+    width: 15rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header .header-3 .box, header .header-3 .more {
+    flex-basis: 47%;
+  }
+  
+  header .header-3 .box p, header .header-3 i{
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  html {
+    font-size: 70%;
+  }
+  
+  header .header-2 .content h1 {
+    font-size: 4rem;
+  }
+  
+  header .header-2 .content p {
+    font-size: 2rem;
+  }
+}
