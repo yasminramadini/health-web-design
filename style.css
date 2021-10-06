@@ -272,6 +272,25 @@ header .header-3 .more p {
   margin-top: 2rem;
 }
 
+#stats {
+  padding: 4rem 7%;
+  background: var(--bg);
+  text-align: center;
+}
+
+#stats .row {
+  justify-content: space-between;
+}
+
+#stats .box h3 {
+  font-size: 3rem;
+  color: var(--blue);
+}
+
+#stats .box span {
+  font-size: 1.5rem;
+}
+
 
 
 /* media screen */
@@ -388,6 +407,10 @@ header .header-3 .more p {
   
   #doctors .content {
     flex-basis: 100%;
+  }
+  
+  #stats .box {
+    flex-basis: 47%;
   }
 }
 
