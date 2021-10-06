@@ -27,11 +27,15 @@ html {
   scroll-padding-top: 7rem;
   transition: width none;
   color: var(--black);
+  background: var(--bg);
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
 }
 
 html::-webkit-scrollbar-track {
-  width: 4rem;
-  background: transparent;
+  background: var(--bg);
 }
 
 html::-webkit-scrollbar-thumb {
@@ -85,7 +89,7 @@ header a {
   top: 0;
   left: 0;
   right: 0;
-  padding: 3rem;
+  padding: 1.4rem 7%;
   transition: none;
 }
 
@@ -291,6 +295,124 @@ header .header-3 .more p {
   font-size: 1.5rem;
 }
 
+#services {
+  padding: 3rem 7%;
+  background: rgba(255,255,255,0.7);
+}
+
+#services .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 2rem;
+}
+
+#services .card img {
+  width: 100%;
+}
+
+#services .card {
+  background: #fff;
+  border-radius: 4px;
+  flex-basis: 32%;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+}
+
+#services .card .content {
+  padding: 1.2rem;
+}
+
+#services h3 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+#services h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.7rem;
+}
+
+#services p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.outline-btn {
+  background: transparent;
+  border: 1px solid var(--blue);
+  padding: 0.8rem 1.6rem;
+  color: #fff;
+  border-radius: 3px;
+  color: var(--blue);
+}
+
+.outline-btn:hover {
+  background: var(--blue);
+  color: #fff;
+}
+
+#services .outline-btn {
+  display: inline-block;
+  margin-bottom: 1.3rem;
+}
+
+#contact {
+  padding: 4rem 7%;
+}
+
+#contact .content h3{
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+}
+
+#contact .content {
+  flex-basis: 53%;
+}
+
+#contact img {
+  flex-basis: 43%;
+  width: 20%;
+  display: block;
+  margin-right: auto;
+}
+
+#contact .content p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+#contact .row {
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+#contact #name {
+  flex-basis: 47%;
+}
+
+#contact #gender {
+  flex-basis: 47%;
+}
+
+#contact #email {
+  flex-basis: 47%;
+}
+
+#contact #date {
+  flex-basis: 47%;
+}
+
+#contact select, #contact input {
+  background: #fff;
+  width: 100%;
+  padding: 0.8rem 1.3rem;
+}
+
+#contact button {
+  margin-top: 2rem;
+}
+
 
 
 /* media screen */
@@ -387,6 +509,15 @@ header .header-3 .more p {
   
   header .header-3 .icon img {
     width: 15rem;
+  }
+  
+  #contact .content {
+    flex-basis: 100%;
+  }
+  
+  #contact img {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
